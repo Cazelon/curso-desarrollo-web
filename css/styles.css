@@ -1,0 +1,55 @@
+/* Estilo del header haciendo uso de flex */
+body{
+  margin: 0;
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+header{
+  background: #1d252c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 70px;
+}
+
+.logo img{
+  height: 70px;
+}
+
+.menu{
+  height: inherit;
+}
+
+.menu ul{
+  height: inherit;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: inherit;
+  width: auto;
+}
+
+.menu a{
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  padding: 0 10px;
+}
