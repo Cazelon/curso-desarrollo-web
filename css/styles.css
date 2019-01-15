@@ -17,10 +17,13 @@ header{
   justify-content: space-between;
   flex-wrap: wrap;
   height: 70px;
+  position: relative;
+  box-shadow: 0 10px 10px 0px rgba(5, 5, 5, 0.4);
 }
 
 .logo img{
   height: 70px;
+  padding: 0 0 0 20px;
 }
 
 .menu{
@@ -50,6 +53,41 @@ header{
   text-decoration: none;
   height: inherit;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   padding: 0 10px;
+}
+
+.work2{
+  padding: 0px 20px 0px 10px;
+}
+
+.hero{
+  display: flex;
+  background-color: #1d252c;
+  margin-top: 0;
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  padding: 0 30px;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+h1 strong{
+  color: #0c60d9;
+}
+
+.hero img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
