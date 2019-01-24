@@ -71,8 +71,17 @@ header{
   flex-wrap: wrap;
 }
 
-h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
   font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1{
   font-size: 40px;
   padding: 0 30px;
   color: white;
@@ -90,4 +99,85 @@ h1 strong{
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.portfolio-title{
+  color: #026fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
+  padding-left: 25px;
+  margin-top: 26px;
+  margin-bottom: 46px;
+  padding-left: 26px;
+}
+
+.project{
+  padding: 26px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 1px rgba(224, 224, 224,1);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project div{
+  width: 48%;
+}
+
+.project-left-content{
+  text-align: left;
+
+}
+
+.project-right-content{
+  text-align: right;
+}
+
+.project-title{
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.project-stack{
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  color: #717171;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.project-date{
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+.project-date span{
+  color: #717171;
+}
+
+.project-url{
+  margin-top: 0;
+}
+
+.project-url a{
+  color: #717171;
+}
+
+.project-description{
+  margin-top: 1.8em;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.project-right-content img{
+  width: 500px;
 }
