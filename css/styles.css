@@ -269,3 +269,77 @@ h1 strong{
   display: inline-block;
   margin: 0.3em 0 1.2em;
 }
+
+.contact{
+  background-color: #026fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  height: 61px;
+}
+
+.contact h2{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  margin-top: 2em;
+}
+
+.contact-left{
+  padding-left: 5em;
+  margin-bottom: 20px;
+}
+
+.email-box{
+  display: block;
+  padding: 0.7em 3.8em 0.7em 3em;
+  border-radius: 5px;
+  border: 1px solid #717171;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.email-box::placeholder{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #717171;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.email-group{
+  position: relative;
+}
+
+.email-envelope img{
+  height: 20px;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  fill: #717171;
+}
+
+.send-button{
+  margin: 1em;
+  margin-left: 0;
+  background-color: transparent;
+  height: 2.4em;
+  width: 8.6em;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.contact-right{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 3em;
+}
