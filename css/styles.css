@@ -335,6 +335,7 @@ h1 strong{
   font-size: 1.2em;
   border: 1px solid;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-right{
@@ -343,3 +344,55 @@ h1 strong{
   justify-content: space-around;
   padding-right: 3em;
 }
+
+footer{
+  background-color: #1d252c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.2em;
+}
+
+.footer-left{
+  padding-left: 1em;
+}
+
+.footer-left p{
+  display: inline-block;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.footer-left img{
+  height: 40px;
+  vertical-align: middle;
+}
+
+.footer-right{
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding-right: 20px;
+  font-size: 1.1em;
+}
+
+.footer-right p{
+  display: inline-block;
+}
+
+.footer-right a{
+  color: inherit;
+}
+
+.footer-circle{
+  display: inline-block;
+  height: 0.6em;
+  width: 0.6em;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
