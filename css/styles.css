@@ -10,6 +10,22 @@ body{
   max-width: 1024px;
 }
 
+.menu-button{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.menu-button img{
+  height: 30px;
+}
+
 header{
   background: #1d252c;
   color: white;
@@ -19,11 +35,11 @@ header{
   height: 70px;
   position: relative;
   box-shadow: 0 10px 10px 0px rgba(5, 5, 5, 0.4);
-  z-index: 1;
+  z-index: 9;
 }
 
 .logo img{
-  height: 70px;
+  height: 65px;
   padding: 0 0 0 20px;
 }
 
@@ -74,9 +90,9 @@ header{
   background-color: #1d252c;
   margin-top: 0;
   height: 300px;
-  align-items: center;
+  /* align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 h1,
@@ -422,4 +438,125 @@ footer{
   margin-left: 0.8em;
   margin-right: 0.8em;
 }
+
+
+@media screen and (max-width: 1024px){
+h1{
+  font-size: 38px;
+}
+} /* End of 1024px media query */
+
+@media screen and (max-width: 948px){
+h1{
+  font-size: 35px;
+}
+} /* End of 948px media query */
+
+
+
+@media screen and (max-width: 880px){
+.menu-button{
+  display: inline-block;
+}
+header{
+  display: block;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo img{
+  padding: 0;
+  padding-top: 5px;
+  height: 58px;
+}
+
+.menu{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 140, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  transition: 0.3s;
+}
+
+.menu.is-active{
+  left: 0;
+}
+
+.menu ul{
+  display: block;
+  padding: 0;
+}
+
+.menu li{
+  display: block;
+  text-align: center;
+  height: initial;
+  padding: 14px 0;
+}
+
+.menu a{
+  display: block;
+  text-decoration: underline;
+}
+
+.menu-portfolio{
+  margin: 0;
+  margin-top: 86px;
+}
+
+.work2 a{
+  border: none;
+}
+} /* End of 880px media query */
+
+@media screen and (max-width: 820px){
+h1{
+  font-size: 30px;
+}
+} /* End of 803px media query */
+
+@media screen and (max-width: 720px){
+.hero{
+  position: relative;
+}
+.hero-right-container{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.hero-sub-right{
+  transform: skew(0);
+}
+.hero-sub-right img{
+  transform: skew(0);
+  right: initial;
+}
+h1{
+  position: absolute;
+  z-index: 2;
+  width: 55%;
+  height: 100%;
+  margin: 0;
+  padding-top: 1em;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+} /* End of 720px media query */
+
+@media screen and (max-width: 540px){
+h1{
+  width: 100%;
+  font-size: 35px;
+}
+} /* End of 480px media query */
+
+@media screen and (max-width: 450px){
+  h1{
+    font-size: 30px;
+  }
+} /* End of 320px media query */
+
 

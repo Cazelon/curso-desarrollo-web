@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,600,700" rel="stylesheet">
 </head>
 <body>
+  <div class="menu-button" id="menu-button">
+    <img src="images/menu-button.svg" alt="boton de menu">
+  </div>
   <div class="container">
     <header>
       <div class="logo">
@@ -15,7 +18,7 @@
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a class="menu-portfolio" href="#portfolio">Portafolio</a></li>
           <li><a href="#experience">Experiencia</a></li>
           <li class="work2"><a href="#contact">Trabajemos Juntos</a></li>
         </ul>
@@ -29,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio-title">Portafolio (Proyectos Destacados)</h2>
       <article class="project">
         <div class="project-left-content">
@@ -68,7 +71,7 @@
         </div>
       </article>
     </section>  
-    <section class="experience">
+    <section class="experience" id="experience">
       <h2 class="experience-title">Más sobre mi experiencia</h2>
       <div class="container">
         <article class="article-card">
@@ -113,7 +116,7 @@
         </article>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-left">
         <h2>¿Creamos algo juntos?</h2>
         <div class="email-group">
@@ -139,5 +142,29 @@
       </div>
     </footer>
   </div>
+  <script>
+      const ipad = window.matchMedia('screen and (max-width: 880px)');
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#menu-button');
+
+      ipad.addListener(validation)
+
+      function validation(event){
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow )
+        } else{
+          burgerButton.removeEventListener('click', hideShow )
+        }
+      }
+      validation(ipad);
+
+      function hideShow(){
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else{
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
 </body>
 </html>
