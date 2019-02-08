@@ -518,13 +518,41 @@ header{
 .work2 a{
   border: none;
 }
+
+footer{
+  display: inherit;
+  height: fit-content;
+  text-align: center;
+}
+
+.footer-left{
+  padding-left: initial;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-right{
+  padding-right: initial;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-left p{
+  margin-bottom: 0;
+}
+
+.footer-right p{
+  margin-top: 0;
+}
+
+
 } /* End of 880px media query */
 
 @media screen and (max-width: 820px){
 h1{
   font-size: 30px;
 }
-} /* End of 803px media query */
+} /* End of 820px media query */
 
 @media screen and (max-width: 720px){
 .hero{
