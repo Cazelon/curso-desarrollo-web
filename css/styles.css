@@ -247,7 +247,7 @@ h1 strong{
   padding-left: 26px;
 }
 
-.experience .container{
+.experience-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -256,7 +256,7 @@ h1 strong{
 .article-card{
   width: 47%;
   background-color: #f4fbff;
-  height: 500px;
+  height: fit-content;
   margin: 10px auto;
   border-radius: 7px;
   overflow: hidden;
@@ -296,7 +296,7 @@ h1 strong{
   padding: 18px;
   padding-top: 0;
   font-size: 1.2em;
-  text-align: justify;
+  text-align: left;
   color: #717171;
   font-weight: 600;
   line-height: 1.5em;
@@ -567,7 +567,23 @@ h1{
   font-size: 15px;
 }
 
+.card-button{
+  font-size: 1.2em;
+}
+
 } /* End of 720px media query */
+
+@media screen and (max-width: 600px){
+  .experience-container{
+    display: inherit;
+  }
+
+  .article-card{
+    width: 100%;
+  }
+  
+
+}
 
 @media screen and (max-width: 540px){
 h1{
@@ -581,12 +597,21 @@ h1{
   padding: 0;
 }
 
+
 } /* End of 540px media query */
 
 @media screen and (max-width: 450px){
   h1{
     font-size: 30px;
   }
+
+  .card-title{
+    font-size: 1.4em;
+  }
+  .card-description{
+    font-size: 1em;
+  }
+
 } /* End of 450px media query */
 
 
