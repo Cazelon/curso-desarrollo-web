@@ -347,6 +347,11 @@ h1 strong{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1em;
   font-weight: 600;
+  background-image: url(../images/envelope.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 13px;
 }
 
 .email-box::placeholder{
@@ -360,13 +365,13 @@ h1 strong{
   position: relative;
 }
 
-.email-envelope img{
+/* .email-envelope img{
   height: 20px;
   position: absolute;
   left: 17px;
   top: 12px;
   fill: #717171;
-}
+} */
 
 .send-button{
   margin: 1em;
@@ -571,6 +576,35 @@ h1{
   font-size: 1.2em;
 }
 
+.contact{
+  display: inherit;
+}
+
+.contact-left{
+  padding: 0;
+  text-align: center;
+  margin-bottom: initial;
+}
+
+.contact-left h2{
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.email-box{
+  margin: 0 auto;
+}
+
+.send-button{
+  margin: 1em auto;
+}
+
+.contact-right{
+  margin: auto;
+  padding-right: initial;
+  padding-bottom: 1em;
+}
+
 } /* End of 720px media query */
 
 @media screen and (max-width: 600px){
@@ -581,9 +615,13 @@ h1{
   .article-card{
     width: 100%;
   }
+
+  .contact-right{
+    width: 75%;
+  }
   
 
-}
+}/* En of 600px media query */
 
 @media screen and (max-width: 540px){
 h1{
@@ -610,6 +648,14 @@ h1{
   }
   .card-description{
     font-size: 1em;
+  }
+
+  .contact-right{
+    width: 95%;
+  }
+
+  .social{
+    height: 48px;
   }
 
 } /* End of 450px media query */
