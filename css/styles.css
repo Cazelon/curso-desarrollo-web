@@ -170,6 +170,7 @@ h1 strong{
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project div{
@@ -183,6 +184,11 @@ h1 strong{
 
 .project-right-content{
   text-align: right;
+}
+
+.project-right-content img{
+  max-width: 500px;
+  width: 100%;
 }
 
 .project-title{
@@ -221,10 +227,6 @@ h1 strong{
   line-height: 1.5em;
   font-size: 18px;
   font-weight: 600;
-}
-
-.project-right-content img{
-  width: 500px;
 }
 
 .experience{
@@ -544,6 +546,27 @@ h1{
   padding-top: 1em;
   background-color: rgba(0, 0, 0, 0.6)
 }
+
+.project{
+  display: inherit;
+}
+
+.project div{
+  width: 100%;
+}
+
+.project-right-content{
+  text-align: center;
+}
+
+.project-right-content img{
+  max-width: 380px;
+}
+
+.project-description{
+  font-size: 15px;
+}
+
 } /* End of 720px media query */
 
 @media screen and (max-width: 540px){
@@ -551,12 +574,19 @@ h1{
   width: 100%;
   font-size: 35px;
 }
-} /* End of 480px media query */
+
+.portfolio-title, .experience-title{
+  font-size: 23px;
+  text-align: center;
+  padding: 0;
+}
+
+} /* End of 540px media query */
 
 @media screen and (max-width: 450px){
   h1{
     font-size: 30px;
   }
-} /* End of 320px media query */
+} /* End of 450px media query */
 
 
